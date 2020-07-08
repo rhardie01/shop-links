@@ -6,18 +6,24 @@
     top: 0;
     left: 0;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #F1F1F1;
 }
 
+.headText {
+    position: fixed;
+    font-size: 2rem;
+    font-family: Poppins;
+    top: 5vw;
+}
+
 .linkBox {
     position: relative;
-    width: 25vh;
-    height: 25vh;
-    bottom: -2vh;
-    margin: 3vh;
+    width: 25vw;
+    height: 25vw;
+    bottom: -2vw;
+    margin: 3vw;
     border-radius: 15%;
     box-shadow: 
 		-20px -20px 30px #ffffff, /*white shadow on top*/
@@ -32,64 +38,64 @@
 .linkBoxTitle {
     position: absolute;
     color: #000000;
-    bottom: 0.5vh;
+    bottom: 0.5vw;
     text-align: justify;
     font-family: Poppins;
-    font-size: 1vh;
-    letter-spacing: 0.5vh;
+    font-size: 1vw;
+    letter-spacing: 0.5vw;
     text-decoration-line: none;
 }
 
 .linkBoxTitleRH {
-    left: 7.5vh;
+    left: 7.5vw;
 }
 
 .linkBoxTitleSB {
-    left: 10.5vh;
+    left: 10.5vw;
 }
 
 .rhLogo {
     position: absolute;
-    width: 24vh;
-    height: 24vh;
+    width: 24vw;
+    height: 24vw;
 }
 
 .sbLogo {
     position: absolute;
-    width: 24vh;
-    height: 24vh;
+    width: 24vw;
+    height: 24vw;
 }
 
-@media only screen and (min-width: 800px) {
-
+@media only screen and (max-width: 800px) {
+    
     .pageContent {
-        flex-direction: row;
-    }
+        flex-direction: column;
+        }
 
     .linkBox {
-        width: 25vw;
-        height: 25vw;
-        }
-    
+    width: 25vh;
+    height: 25vh;
+    }
+
     .rhLogo {
-        width: 24vw;
-        height: 24vw;
+        width: 24vh;
+        height: 24vh;
     }
     
     .sbLogo {
-        width: 24vw;
-        height: 24vw;
+        width: 24vh;
+        height: 24vh;
     }
 
     .linkBoxTitle {
-        font-size: 1vw;
+        font-size: 1vh;
     }
 
     .linkBoxTitleRH {
-        left: 7.5vw;
+        left: 7.5vh;
     }
     
     .linkBoxTitleSB {
-        left: 10.5vw;
+        left: 10.5vh;
     }
-}
+  }
