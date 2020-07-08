@@ -16,7 +16,6 @@
     position: relative;
     width: 25vh;
     height: 25vh;
-    bottom: -2vh;
     margin: 3vh;
     border-radius: 15%;
     box-shadow: 
@@ -60,7 +59,7 @@
     height: 24vh;
 }
 
-@media only screen and (min-device-width: 900px) {
+/* @media only screen and (min-device-width: 900px) {
 
     .pageContent {
         flex-direction: row;
@@ -92,4 +91,112 @@
     .linkBoxTitleSB {
         left: 10.5vw;
     }
-}
+} */
+
+/* #### Mobile Phones Portrait #### */
+/* @media screen and (max-device-width: 480px) and (orientation: portrait){
+        the site is designed for this so no extra code should be needed
+  } */
+  
+  /* #### Mobile Phones Landscape #### */
+  @media screen and (max-device-width: 640px) and (orientation: landscape){
+    .pageContent {
+        flex-direction: row;
+    }
+
+    .linkBox {
+        width: 25vw;
+        height: 25vw;
+        }
+    
+    .rhLogo {
+        width: 24vw;
+        height: 24vw;
+    }
+    
+    .sbLogo {
+        width: 24vw;
+        height: 24vw;
+    }
+
+    .linkBoxTitle {
+        font-size: 1vw;
+    }
+
+    .linkBoxTitleRH {
+        left: 7.5vw;
+    }
+    
+    .linkBoxTitleSB {
+        left: 10.5vw;
+    }
+  }
+  
+  /* #### Tablets Portrait or Landscape #### */
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    .pageContent {
+        flex-direction: row;
+    }
+
+    .linkBox {
+        width: 25vw;
+        height: 25vw;
+        }
+    
+    .rhLogo {
+        width: 24vw;
+        height: 24vw;
+    }
+    
+    .sbLogo {
+        width: 24vw;
+        height: 24vw;
+    }
+
+    .linkBoxTitle {
+        font-size: 1vw;
+    }
+
+    .linkBoxTitleRH {
+        left: 7.5vw;
+    }
+    
+    .linkBoxTitleSB {
+        left: 10.5vw;
+    }
+  }
+  
+  /* #### Desktops #### */
+  @media screen and (min-width: 1024px){
+
+    .pageContent {
+        flex-direction: row;
+    }
+
+    .linkBox {
+        width: 25vw;
+        height: 25vw;
+        }
+    
+    .rhLogo {
+        width: 24vw;
+        height: 24vw;
+    }
+    
+    .sbLogo {
+        width: 24vw;
+        height: 24vw;
+    }
+
+    .linkBoxTitle {
+        font-size: 1vw;
+    }
+
+    .linkBoxTitleRH {
+        left: 7.5vw;
+    }
+    
+    .linkBoxTitleSB {
+        left: 10.5vw;
+    }
+  }
